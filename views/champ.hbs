@@ -1,0 +1,29 @@
+ 
+  <!--  <h1 style="margin-top: 0px;">{{this.year}}</h1> -->
+   
+    <table>
+        <tr>
+          <th>Дата</th>
+          <th>Дисциплина</th>
+          <th>Место проведения</th>
+          <th>Город</th>
+          <th>Состояние</th>
+        </tr>
+    
+        {{#each this.data}}
+        <tr>
+          <td>{{this.date}}</th>
+          <th><a href='/etap/{{this.etap_id}}'>{{this.disc}}</a></th>
+          <th>{{this.place}}</th>
+          <th>{{this.sity}}</th>
+          <td>{{this.sost}}</th>
+        </tr> 
+        {{/each}}
+    </table>
+    <h2>Общее состояние</h2>
+
+  <h1>РАЗДЕЛ В РАЗРАБОТКЕ</h1>
+    <!--nav>
+      <a href="/">По группам</a> | <a href="/contact">Общий</a>
+    </nav> -->
+

@@ -1,0 +1,11 @@
+
+<section class="header">
+   {{#if name }} <img class="header_logo__smal" src="/images/logo.jpg">
+                      <div>
+                      <h3 class="header_title">{{this.name}} </h3>
+                      <h3 class="header_title">{{this.year}} </h3>
+                      </div>
+     {{^}} <img class="header_logo" src="/images/logo.jpg">
+            <h1 class="header_title">Федерация ветеранов и любителей горнолыжного спорта</h1>
+  {{/if}}
+</section>

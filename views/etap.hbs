@@ -1,0 +1,53 @@
+        <div>
+        {{#each this.condition}}
+        <section class="etap_conditions">
+       <!-- <h3>{{this.disc}}</h3> -->
+        <h2>{{date}}</h2>
+        <table>
+        <tr><td>  <a href="/place/{{place_id}}"> <h5>Место проведения: {{place}}</h5></a>  </td>  </tr>
+        <tr><td>Главный судья: {{gl_judje}} </td> </tr>
+        <tr><td>Главный секретарь: {{gl_secret}}</td></tr>
+        <tr><td>Постановщик: {{postman}}</td></tr>
+        <tr><td>Судья на финише: {{fin_judje}}</td></tr>
+        <tr><td>Длина трассы: {{lenght}}м.</td></tr>
+        <tr><td>Ворот: {{vorota}}</td></tr>
+        <tr><td>Перепад: {{perepad}}м.</td></tr>
+        <tr><td>Погода: {{pogoda}}&#0176 C<td><th>
+        </table>
+        {{/each}}
+        </div>
+
+<nav>
+   <a href="/etap/group/{{this.etap}}"><h4>По группам</h4></a>  
+</nav>
+
+        </section>
+        <table>
+          <tr>
+            <td>Bip</td>
+            <th>Место</th>
+            <th>Фамилия Имя</th>
+            <th>г/р</th>
+            <th>Город</th>
+            <th>Попытка 1</th>
+            <th>Попытка 2</th>
+            <th>Сумма</th>
+            <th>Очки</th>
+          </tr>
+       
+       {{#with this.women}}  
+      <th colspan="9">Женщины</th>
+      {{{protocol women}}}
+      {{/with}}
+
+      {{#with this.men}}  
+      <th colspan="9">Мужчины</th>
+      {{{protocol men}}}
+      {{/with}}
+        
+      {{#with this.dnf}}  
+      <th colspan="9">Не закончили соревнование</th>
+      {{{dnf dnf}}}
+      {{/with}}
+        </table>
+        
